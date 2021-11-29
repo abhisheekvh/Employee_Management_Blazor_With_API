@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="images\**" />
+    <Content Remove="images\**" />
+    <EmbeddedResource Remove="images\**" />
+    <None Remove="images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagement.models\EmployeeManagement.models.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿@page "/"
+@inherits EmployeeList
+<h3>Employee</h3>
+
+
+<div class="row">
+
+    @if (employees != null)
+    {
+    @foreach (var employee in employees)
+    {
+
+        <div class="card" >
+            <div class="card-header">
+                <h3>@employee.FirstName @employee.LastName</h3>
+
+            </div>
+            <img class="card-img-top" src="@employee.PhotoPath" />
+            <div class="card-footer text-center">
+                <a href="@($"employedetails/{employee.EmployeeId}")" class="btn btn-primary m-1">View</a>
+                <a href="#" class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-danger m-1">Delete</a>
+            </div>
+
+        </div>
+
+
+    }
+    }
+</div>
+
+
+
+

@@ -1,0 +1,36 @@
+﻿@page "/employedetails/{id}"
+@inherits EmployeeDetailsBase
+<h3>EmployeeDetails</h3>
+
+@if (employee == null || employee.Department == null)
+{
+                <h3>Loading...</h3>
+}
+else
+{
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card" style="min-width:18rem;max-width:15.5%;height:30px">
+            <div class="card-header">
+                <h1>@employee.FirstName @employee.LastName @coordinates</h1>
+
+            </div>
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@employee.PhotoPath" @onmousemove="Mouse_Move"/>
+                <h4>Employee ID : @employee.EmployeeId</h4>
+                <h4> Email : @employee.Email</h4>
+                <h4>Department : @employee.Department.Departmentname</h4>
+
+            </div>
+            <div class="card-footer text-center">
+                <a href="/" class="btn btn-primary btn-sm">Back</a>
+                <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                <a href="#" class="btn btn-danger btn-sm">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+
