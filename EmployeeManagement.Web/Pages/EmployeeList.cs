@@ -15,6 +15,8 @@ namespace EmployeeManagement.Web.Pages
         [Inject]
         private IEmployees emp { get; set; }
 
+        public bool ShowFooter { get; set; } = true;
+
       
         protected override async Task OnInitializedAsync()
         {

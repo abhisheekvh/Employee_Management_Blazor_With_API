@@ -8,6 +8,6 @@ namespace EmployeeManagement.Web.Pages
 {
     public class DataBindingDemoBase: ComponentBase
     {
-        public string Name { get; set; } = "Tom";
+        public string description { get; set; } = string.Empty;
     }
 }

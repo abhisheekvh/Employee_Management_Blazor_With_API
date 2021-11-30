@@ -58,3 +58,5 @@ C:\Users\AbhisheekHayagreev\OneDrive - Genzeon Corporation\Desktop\Blazor_API\Bl
 C:\Users\AbhisheekHayagreev\OneDrive - Genzeon Corporation\Desktop\Blazor_API\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\Razor\Pages\EmployeeDetails.razor.g.cs
 C:\Users\AbhisheekHayagreev\OneDrive - Genzeon Corporation\Desktop\Blazor_API\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\DataBindingDemo.razor.g.cs
 C:\Users\AbhisheekHayagreev\OneDrive - Genzeon Corporation\Desktop\Blazor_API\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\Razor\Pages\DataBindingDemo.razor.g.cs
+C:\Users\AbhisheekHayagreev\OneDrive - Genzeon Corporation\Desktop\Blazor_API\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\RazorDeclaration\Pages\DisplayEmployee.razor.g.cs
+C:\Users\AbhisheekHayagreev\OneDrive - Genzeon Corporation\Desktop\Blazor_API\BlazorTutorial\EmployeeManagement.Web\obj\Debug\net5.0\Razor\Pages\DisplayEmployee.razor.g.cs
