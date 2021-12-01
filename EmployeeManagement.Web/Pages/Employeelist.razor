@@ -1,6 +1,6 @@
 ﻿@page "/"
 @inherits EmployeeList
-<h3>Employee</h3>
+<h3>Selected Employee Count -> @count</h3>
 <input type="checkbox" id="show" @bind="ShowFooter" />
 <label for="show">Show Footer</label>
 
@@ -11,7 +11,7 @@
     @foreach (var employee in employees)
     {
 
-        <DisplayEmployee Employee="employee" ShowFooter="ShowFooter"></DisplayEmployee>
+        <DisplayEmployee Employee="employee" ShowFooter="ShowFooter" OnEmployeeSelection="OnEmployeeSelection"></DisplayEmployee>
 
 
     }

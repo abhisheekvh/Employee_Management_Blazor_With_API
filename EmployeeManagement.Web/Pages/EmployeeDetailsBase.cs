@@ -25,6 +25,7 @@ namespace EmployeeManagement.Web.Pages
         {
             coordinates = $"X = {e.ClientX} Y = {e.ClientY}";
         }
+        
 
     }
 }

@@ -16,6 +16,7 @@ namespace EmployeeManagement.Web.Pages
         private IEmployees emp { get; set; }
 
         public bool ShowFooter { get; set; } = true;
+        public int count { get; set; } = 0;
 
       
         protected override async Task OnInitializedAsync()
@@ -30,7 +31,17 @@ namespace EmployeeManagement.Web.Pages
             }
 
         }
-       
+       protected void OnEmployeeSelection(bool isSelected)
+        {
+            if(isSelected)
+            {
+                count++;
+            }
+            else
+            {
+                count--;
+            }
+        }
 
 
 
