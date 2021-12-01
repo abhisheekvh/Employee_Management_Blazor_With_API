@@ -1,3 +1,4 @@
+using EmployeeManagement.models;
 using EmployeeManagement.Web.Data;
 using EmployeeManagement.Web.Services;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +34,10 @@ namespace EmployeeManagement.Web
             services.AddHttpClient<IEmployees, Employees>(client =>
             {
                 client.BaseAddress = new Uri("https://localhost:44306/");
+            });
+            services.AddHttpClient<IDepartment, Departments>(iclient =>
+            {
+                iclient.BaseAddress = new Uri("https://localhost:44306/");
             });
         }
 
