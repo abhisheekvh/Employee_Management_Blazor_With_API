@@ -9,7 +9,7 @@ namespace EmployeeManagement.Api.Models
 {
     public class DepartmentRepository : IDepartmentRepository
     {
-        private AppDbContext _appDbContext;
+        private readonly AppDbContext _appDbContext;
         public DepartmentRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
@@ -22,7 +22,8 @@ namespace EmployeeManagement.Api.Models
 
         public async Task<List<Department>> GetDepartments()
         {
-            return await _appDbContext.departments.ToListAsync();
+            var deps= await _appDbContext.departments.ToListAsync();
+            return deps;
         }
 
     }
